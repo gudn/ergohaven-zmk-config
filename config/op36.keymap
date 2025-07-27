@@ -69,10 +69,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &kp PG_UP      &kp PG_DN  &kp LC(C)  &kp LC(V)  &kp DELETE                    &none            &kp HOME         &none            &none         &kp END
-                                       &trans     &trans      &trans    &trans  &mo 3            &trans
+  &kp N1           &kp N2         &kp N3            &kp N4            &kp N5                       &kp N6    &kp N7           &kp N8         &kp N9           &kp N0
+  &hml LGUI ESC    &hml LALT TAB  &hml LSHFT PG_DN  &hml LCTRL PG_UP  &kp ENTER                    &kp LEFT  &hmr RCTRL DOWN  &hmr RSHFT UP  &hmr LALT RIGHT  &kp RGUI
+  &kp PRINTSCREEN  &kp DOWN       &kp DOWN          &kp UP            &kp RIGHT                    &kp HOME  &none            &none          &kp END          &kp DELETE
+                                                    &trans            &trans     &trans    &trans  &mo 3     &trans
             >;
 
             display-name = "Navigation";
@@ -80,10 +80,10 @@
 
         sym {
             bindings = <
-  &none         &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp AMPS      &kp LBKT         &kp UNDER        &kp RBKT        &none
-  &hml LGUI AT  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp ASTRK     &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH      &kp PERCENT     &kp COLON         &kp CARET        &none                        &kp QUESTION  &kp BACKSLASH    &kp TILDE        &kp SLASH       &kp DLLR
-                                                  &trans           &mo 3      &trans    &trans  &trans        &trans
+  &kp GRAVE  &kp AT          &kp HASH          &kp DOLLAR       &kp PERCENT                    &kp AMPS   &kp LBKT         &kp ASTRK         &kp RBKT        &kp BACKSLASH
+  &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                       &kp CARET  &hmr RCTRL LBRC  &hmr RSHFT UNDER  &hmr LALT RBRC  &hmr RGUI EXCL
+  &none      &kp LT          &kp EQUAL         &kp GT           &none                          &kp PIPE   &none            &kp QUESTION      &kp SLASH       &kp TILDE
+                                               &trans           &mo 3        &trans    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -93,7 +93,7 @@
             bindings = <
   &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none                &none              &none               &studio_unlock
+  &kp K_LOCK   &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_BRI_DEC        &kp K_MUTE2        &kp C_BRI_UP        &none
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
