@@ -50,7 +50,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp TAB
+                                          &kp BACKSPACE  &mo 3  &kp SPACE    &kp ENTER  &mo 4  &kp TAB
             >;
 
             display-name = "Base";
@@ -58,19 +58,28 @@
 
         mouse {
             bindings = <
-  &none    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT                     &none  &none  &none  &none  &none
-  &kp ESC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                     &none  &none  &none  &none  &none
-  &tog 1   &mkp RCLK       &mkp MCLK     &mkp LCLK       &none                               &none  &none  &none  &none  &none
-                                         &kp LSHIFT      &kp LCTRL        &kp LALT    &none  &none  &none
+  &none    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT                   &none  &none      &none       &none     &none
+  &kp ESC  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                   &none  &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
+  &none    &mkp RCLK       &mkp MCLK     &mkp LCLK       &none                             &none  &none      &none       &none     &none
+                                         &trans          &to 0            &trans    &none  &none  &none
+            >;
+        };
+
+        numpad {
+            bindings = <
+  &kp KP_ASTERISK  &kp KP_N7  &kp KP_N8  &kp KP_N9     &kp KP_SLASH                    &none  &none      &none       &none     &none
+  &kp KP_PLUS      &kp KP_N4  &kp KP_N5  &kp KP_N6     &kp KP_N0                       &none  &kp LCTRL  &kp LSHIFT  &kp LALT  &kp LGUI
+  &kp KP_MINUS     &kp KP_N1  &kp KP_N2  &kp KP_N3     &kp KP_DOT                      &none  &none      &none       &none     &none
+                                         &kp KP_EQUAL  &to 0         &kp TAB    &none  &none  &none
             >;
         };
 
         nav {
             bindings = <
-  &kp N1         &kp N2           &kp N3            &kp N4            &kp N5                       &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
-  &hml LGUI ESC  &hml LALT PSCRN  &hml LSHFT PG_UP  &hml LCTRL PG_DN  &kp ENTER                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-  &tog 1         &kp LEFT         &kp UP            &kp DOWN          &kp RIGHT                    &kp HOME  &none     &none   &kp END    &kp DELETE
-                                                    &trans            &trans     &trans    &trans  &mo 4     &trans
+  &kp N1         &kp N2           &kp N3            &kp N4            &kp N5                      &kp N6    &kp N7    &kp N8  &kp N9     &kp N0
+  &hml LGUI ESC  &hml LALT PSCRN  &hml LSHFT PG_UP  &hml LCTRL PG_DN  &kp ENTER                   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+  &none          &kp LEFT         &kp UP            &kp DOWN          &kp RIGHT                   &kp HOME  &none     &none   &kp END    &kp DELETE
+                                                    &to 2             &trans     &to 1    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
@@ -81,7 +90,7 @@
   &kp GRAVE  &kp AT          &kp HASH          &kp DOLLAR       &kp PERCENT                    &kp CARET          &kp AMPS         &kp ASTRK         &kp PIPE        &kp BACKSLASH
   &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                       &kp LBKT           &hmr RCTRL LBRC  &hmr RSHFT UNDER  &hmr LALT RBRC  &hmr RGUI EXCL
   &none      &kp LT          &kp EQUAL         &kp GT           &none                          &kp RIGHT_BRACKET  &none            &kp QUESTION      &kp SLASH       &kp TILDE
-                                               &trans           &mo 4        &trans    &trans  &trans             &trans
+                                               &trans           &mo 5        &trans    &trans  &trans             &trans
             >;
 
             display-name = "Symbols";
