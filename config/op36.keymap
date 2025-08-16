@@ -11,6 +11,8 @@
     require-prior-idle-ms = <125>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -100,7 +102,7 @@
             bindings = <
   &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &kp K_LOCK   &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_BRI_DEC        &none              &kp C_BRI_UP        &none
+  &caps_word   &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_BRI_DEC        &none              &kp C_BRI_UP        &none
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
