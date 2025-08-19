@@ -78,9 +78,9 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2           &kp N3            &kp N4            &kp N5                       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
-  &hml LGUI ESC  &hml LALT PSCRN  &hml LSHFT PG_UP  &hml LCTRL PG_DN  &kp ENTER                    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none
-  &to 1          &kp LEFT         &kp UP            &kp DOWN          &kp RIGHT                    &kp HOME  &none     &kp RALT  &kp END    &kp DELETE
+  &kp N1         &kp N2           &kp N3            &kp N4            &kp N5                       &kp N6    &kp N7      &kp N8    &kp N9     &kp N0
+  &hml LGUI ESC  &hml LALT PSCRN  &hml LSHFT PG_UP  &hml LCTRL PG_DN  &kp ENTER                    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  &none
+  &to 1          &kp LEFT         &kp UP            &kp DOWN          &kp RIGHT                    &kp HOME  &caps_word  &kp RALT  &kp END    &kp DELETE
                                                     &trans            &trans     &trans    &trans  &mo 5     &trans
             >;
 
@@ -89,9 +89,9 @@
 
         sym {
             bindings = <
-  &kp GRAVE  &kp AT          &kp HASH          &kp DOLLAR       &kp PERCENT                    &kp CARET          &kp AMPS         &kp ASTRK         &kp PIPE        &kp BACKSLASH
-  &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                       &kp LBKT           &hmr RCTRL LBRC  &hmr RSHFT UNDER  &hmr LALT RBRC  &hmr RGUI EXCL
-  &none      &kp LT          &kp EQUAL         &kp GT           &none                          &kp RIGHT_BRACKET  &none            &kp QUESTION      &kp SLASH       &kp TILDE
+  &kp EXCL   &kp AT          &kp HASH          &kp DOLLAR       &kp PERCENT                    &kp CARET          &kp AMPS         &kp ASTRK         &kp PIPE        &kp BACKSLASH
+  &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                       &kp LBKT           &hmr RCTRL LBRC  &hmr RSHFT UNDER  &hmr LALT RBRC  &hmr RGUI COLON
+  &kp GRAVE  &kp LT          &kp EQUAL         &kp GT           &none                          &kp RIGHT_BRACKET  &none            &kp QUESTION      &kp SLASH       &kp TILDE
                                                &trans           &mo 5        &trans    &trans  &trans             &trans
             >;
 
@@ -102,7 +102,7 @@
             bindings = <
   &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &caps_word   &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_BRI_DEC        &none              &kp C_BRI_UP        &none
+  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_BRI_DEC        &none              &kp C_BRI_UP        &none
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
