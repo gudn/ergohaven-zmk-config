@@ -91,7 +91,7 @@
             bindings = <
   &kp EXCL   &kp AT          &kp HASH          &kp DOLLAR       &kp PERCENT                    &kp CARET          &kp AMPS         &kp ASTRK         &kp PIPE        &kp BACKSLASH
   &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                       &kp LBKT           &hmr RCTRL LBRC  &hmr RSHFT UNDER  &hmr LALT RBRC  &hmr RGUI COLON
-  &kp GRAVE  &kp LT          &kp EQUAL         &kp GT           &none                          &kp RIGHT_BRACKET  &none            &kp QUESTION      &kp SLASH       &kp TILDE
+  &kp GRAVE  &kp LT          &kp EQUAL         &kp GT           &kp TILDE                      &kp RIGHT_BRACKET  &none            &kp QUESTION      &kp SLASH       &kp DQT
                                                &trans           &mo 5        &trans    &trans  &trans             &trans
             >;
 
